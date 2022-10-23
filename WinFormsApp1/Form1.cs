@@ -9,7 +9,25 @@ namespace WinFormsApp1
 
         private void ChangeColorButtonClick(object sender, EventArgs e)
         {
-            ChangeColorButton.BackColor = Color.DeepSkyBlue;
+            Random r = new Random();
+            int N = r.Next(1, 5);
+            switch (N)
+            {
+                case 1:
+                    ChangeColorButton.BackColor = Color.Pink;
+                    break;
+                case 2:
+                    ChangeColorButton.BackColor = Color.DeepSkyBlue;
+                    break;
+                case 3:
+                    ChangeColorButton.BackColor = Color.GreenYellow;
+                    break;
+                case 4:
+                    ChangeColorButton.BackColor = Color.Green;
+                    break;
+                case 5: ChangeColorButton.BackColor = Color.Lavender;
+                    break;
+            }
         }
 
         private void ChangeColorButton_MouseEnter(object sender, EventArgs e)
